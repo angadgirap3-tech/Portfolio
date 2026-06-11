@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Resume</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="index.html">Angad</a>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">☀️</button>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation">☰</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container page-content">
+      <section class="card">
+        <h1>Resume</h1>
+        <p>Download a PDF version of my resume from the assets folder or use this summary as a quick overview.</p>
+        <a class="button primary" href="assets/resume/resume.pdf">Download Resume</a>
+      </section>
+
+      <section class="section-grid two-up">
+        <article class="card">
+          <h2>Experience</h2>
+          <ul class="bullet-list">
+            <li>Built responsive front-end interfaces for web projects.</li>
+            <li>Worked with HTML, CSS, JavaScript, and PHP to ship complete pages.</li>
+            <li>Focused on usability, accessibility, and visual consistency.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Education</h2>
+          <p>Strong foundation in digital design, user experience, and modern front-end development practices.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Angad. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
