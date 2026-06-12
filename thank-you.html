@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .success-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1.5rem;
+        background: var(--gradient-1);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 3rem;
+        animation: successPop 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      @keyframes successPop {
+        0% {
+          transform: scale(0) rotate(0deg);
+          opacity: 0;
+        }
+        60% {
+          transform: scale(1.2) rotate(10deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+          opacity: 1;
+        }
+      }
+      .success-card {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="index.html">Angad</a>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">☀️</button>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation">☰</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container page-content">
+      <section class="card success-card">
+        <div class="success-icon">✉️</div>
+        <h1>Message Sent Successfully!</h1>
+        <p class="lead" style="margin: 1.5rem auto;">Thank you for reaching out! I've received your message and will get back to you as soon as possible, usually within 24-48 hours.</p>
+        
+        <div style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 16px; padding: 1.5rem; margin: 2rem 0; text-align: left;">
+          <h3 style="margin-top: 0;">📬 What happens next?</h3>
+          <ul class="bullet-list" style="margin: 1rem 0 0 0;">
+            <li>I'll review your message carefully</li>
+            <li>You'll receive a response directly to your email</li>
+            <li>If urgent, feel free to reach out via social media</li>
+          </ul>
+        </div>
+
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+          <a href="index.html" class="button primary">Back to Home</a>
+          <a href="projects.html" class="button secondary">View Projects</a>
+        </div>
+      </section>
+
+      <section class="section-grid two-up" style="margin-top: 3rem;">
+        <article class="card">
+          <h3>🚀 In the Meantime</h3>
+          <p>Check out my latest projects and see what I've been working on.</p>
+          <a href="projects.html" class="button liquid" style="margin-top: 1rem;">View Projects</a>
+        </article>
+        <article class="card">
+          <h3>📄 Learn More</h3>
+          <p>Download my resume or read more about my skills and experience.</p>
+          <a href="resume.html" class="button liquid" style="margin-top: 1rem;">View Resume</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Angad. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

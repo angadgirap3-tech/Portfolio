@@ -2,6 +2,11 @@
   publish = "."
   command = "echo 'Static site - no build required'"
 
+# Form submissions settings
+[forms]
+  # Enable form spam filtering
+  spam_filter = true
+
 # Set custom headers
 [[headers]]
   for = "/*"

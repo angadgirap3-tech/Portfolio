@@ -31,9 +31,17 @@
       <section class="card contact-wrap">
         <div>
           <h1>Contact Me</h1>
-          <p>Use the form below to send a message. The page is ready to connect to your PHP mail handler.</p>
+          <p>Use the form below to send a message. I'll get back to you as soon as possible!</p>
+          <div id="form-success" style="display: none; margin-top: 1.5rem; padding: 1rem; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 12px; color: var(--text);">
+            <strong>✅ Message sent successfully!</strong>
+            <p style="margin: 0.5rem 0 0 0;">Thank you for reaching out. I'll respond to you shortly.</p>
+          </div>
         </div>
-        <form class="contact-form" action="php/contact.php" method="post">
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="contact" />
+          <p style="display: none;">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+          </p>
           <label>
             Name
             <input type="text" name="name" required />

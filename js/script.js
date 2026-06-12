@@ -117,6 +117,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Particle background effect
   createParticles();
+
+  // Handle contact form success message
+  if (window.location.pathname.includes('contact.html')) {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('success') === 'true') {
+      const successMsg = document.getElementById('form-success');
+      if (successMsg) {
+        successMsg.style.display = 'block';
+        // Scroll to success message
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+  }
 });
 
 function createParticles() {
