@@ -31,31 +31,27 @@
       <section class="card contact-wrap">
         <div>
           <h1>Contact Me</h1>
-          <p>Use the form below to send a message, or email me directly at <a href="mailto:angad.girap.3@gmail.com" style="color: var(--accent);">angad.girap.3@gmail.com</a></p>
-          <div id="form-success" style="display: none; margin-top: 1.5rem; padding: 1rem; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 12px; color: var(--text);">
-            <strong>✅ Message sent successfully!</strong>
-            <p style="margin: 0.5rem 0 0 0;">Thank you for reaching out. I'll respond to you shortly.</p>
-          </div>
-          <div id="form-error" style="display: none; margin-top: 1.5rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; color: var(--text);">
-            <strong>❌ Something went wrong</strong>
-            <p style="margin: 0.5rem 0 0 0;">Please try again or email me directly.</p>
+          <p><strong>📧 FormSubmit.co Version (Zero Config!)</strong></p>
+          <p>This version uses FormSubmit - no setup required! Or email me directly at <a href="mailto:angad.girap.3@gmail.com" style="color: var(--accent);">angad.girap.3@gmail.com</a></p>
+          <div style="margin-top: 1rem; padding: 1rem; background: rgba(99, 102, 241, 0.1); border: 1px solid var(--accent); border-radius: 12px;">
+            <strong>💡 How it works:</strong>
+            <ul style="margin: 0.5rem 0 0 1.5rem; line-height: 1.7;">
+              <li>First submission asks you to verify your email</li>
+              <li>Click the verification link in your inbox</li>
+              <li>All future submissions go directly to your email!</li>
+              <li>100% FREE, unlimited submissions</li>
+            </ul>
           </div>
         </div>
-        <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <!-- Web3Forms Access Key - FREE, no signup required -->
-          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <form class="contact-form" action="https://formsubmit.co/angad.girap.3@gmail.com" method="POST">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://phenomenal-malabi-0dccb3.netlify.app/thank-you.html">
+          <input type="hidden" name="_captcha" value="false">
           
-          <!-- Optional: Redirect to thank you page after submission -->
-          <input type="hidden" name="redirect" value="https://phenomenal-malabi-0dccb3.netlify.app/thank-you.html">
-          
-          <!-- Optional: Custom subject line -->
-          <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
-          
-          <!-- Optional: From Name -->
-          <input type="hidden" name="from_name" value="Portfolio Contact Form">
-          
-          <!-- Honeypot Spam Protection -->
-          <input type="checkbox" name="botcheck" id="" style="display: none;">
+          <!-- Honeypot for spam protection -->
+          <input type="text" name="_honey" style="display:none">
           
           <label>
             Name
@@ -85,9 +81,9 @@
           <a href="mailto:angad.girap.3@gmail.com?subject=Portfolio%20Inquiry" class="button secondary" style="margin-top: 1rem;">Send Email</a>
         </article>
         <article class="card">
-          <h3>💼 Connect on LinkedIn</h3>
-          <p>Let's connect professionally on LinkedIn.</p>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="button secondary" style="margin-top: 1rem;">LinkedIn Profile</a>
+          <h3>🌐 Use Web3Forms Version</h3>
+          <p>Prefer Web3Forms? Switch to that version.</p>
+          <a href="contact.html" class="button secondary" style="margin-top: 1rem;">Web3Forms Version</a>
         </article>
       </section>
     </main>
@@ -97,6 +93,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/contact-form.js"></script>
   </body>
 </html>
