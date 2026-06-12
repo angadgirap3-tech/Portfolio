@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Effects Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .showcase-section {
+        padding: 3rem 0;
+      }
+      .button-grid {
+        display: grid;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .button-demo {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(26, 31, 58, 0.4);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+      }
+      .button-demo h3 {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+      }
+      .button-demo p {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="index.html">Angad</a>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">☀️</button>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation">☰</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container page-content">
+      <section class="card">
+        <h1>🎨 Button Effects Showcase</h1>
+        <p>Explore all the stunning button effects and interactions in your portfolio. Hover, click, and interact to see them in action!</p>
+      </section>
+
+      <section class="showcase-section">
+        <div class="button-grid">
+          
+          <div class="button-demo">
+            <h3>✨ Primary Button - Shimmer Effect</h3>
+            <p>Hover: Shimmer animation sweeps across | Click: Ripple burst effect | Focus: Pulsing glow</p>
+            <button class="button primary">Shimmer Effect</button>
+          </div>
+
+          <div class="button-demo">
+            <h3>🔮 Secondary Button - Magnetic Border</h3>
+            <p>Hover: Animated gradient border appears | Click: Ripple with 3D press | Color shifts to accent</p>
+            <button class="button secondary">Magnetic Border</button>
+          </div>
+
+          <div class="button-demo">
+            <h3>💧 Liquid Fill Button</h3>
+            <p>Hover: Gradient fills from bottom to top like liquid | Smooth color transition</p>
+            <button class="button liquid">Liquid Fill</button>
+          </div>
+
+          <div class="button-demo">
+            <h3>🌟 Neon Glow Button</h3>
+            <p>Continuous pulsing neon effect | Hover: Intensified glow and inner light</p>
+            <button class="button neon">Neon Glow</button>
+          </div>
+
+          <div class="button-demo">
+            <h3>🎨 Morphing Gradient Button</h3>
+            <p>Animated gradient constantly morphing | Hover: Speeds up animation</p>
+            <button class="button morph">Morphing Gradient</button>
+          </div>
+
+          <div class="button-demo">
+            <h3>⚡ Glitch Effect Button</h3>
+            <p>Hover: RGB split glitch with chromatic aberration | Cyberpunk aesthetic</p>
+            <button class="button glitch" data-text="Glitch Effect">Glitch Effect</button>
+          </div>
+
+          <div class="button-demo">
+            <h3>🫧 Bubble Pop Button</h3>
+            <p>Hover: Playful bubble expansion animation | Fun and dynamic feel</p>
+            <button class="button bubble">Bubble Pop</button>
+          </div>
+
+          <div class="button-demo">
+            <h3>🔄 Split Reveal Button</h3>
+            <p>Hover: Gradient slides in from both sides | Smooth dual-panel reveal</p>
+            <button class="button split">Split Reveal</button>
+          </div>
+
+          <div class="button-demo">
+            <h3>🌟 Multiple Buttons Together</h3>
+            <p>Mix and match different styles for varied interactions</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+              <button class="button primary">Primary</button>
+              <button class="button secondary">Secondary</button>
+              <button class="button liquid">Liquid</button>
+              <button class="button neon">Neon</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="card" style="margin-top: 3rem;">
+        <h2>🔥 Effect Details</h2>
+        <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
+          <div>
+            <h3>Primary Button Effects (✨ Shimmer):</h3>
+            <ul class="bullet-list">
+              <li><strong>Shimmer on Hover:</strong> White gradient sweeps left to right</li>
+              <li><strong>Continuous Glow:</strong> Pulsing shadow animation (3s loop)</li>
+              <li><strong>Hover Transform:</strong> Lifts 4px + scales to 102%</li>
+              <li><strong>Color Shift:</strong> Gradient intensifies (purple to pink)</li>
+              <li><strong>Click Ripple:</strong> Radial burst animation from click point</li>
+              <li><strong>Active Press:</strong> 3D press-down effect (scale 98%)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Secondary Button Effects (🔮 Magnetic Border):</h3>
+            <ul class="bullet-list">
+              <li><strong>Magnetic Border:</strong> Animated gradient border on hover</li>
+              <li><strong>Glassmorphism:</strong> Backdrop blur with transparency</li>
+              <li><strong>Glow Shadow:</strong> Soft purple shadow appears on hover</li>
+              <li><strong>Color Change:</strong> Text shifts to accent color</li>
+              <li><strong>Inner Glow:</strong> Subtle inset shadow effect</li>
+              <li><strong>Smooth Transitions:</strong> Cubic-bezier easing (0.4s)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Alternative Button Styles:</h3>
+            <ul class="bullet-list">
+              <li><strong>Liquid (💧):</strong> Gradient fills from bottom to top on hover</li>
+              <li><strong>Neon (🌟):</strong> Continuous pulsing glow with intensified hover</li>
+              <li><strong>Morph (🎨):</strong> Animated gradient constantly shifting position</li>
+              <li><strong>Glitch (⚡):</strong> RGB split chromatic aberration on hover</li>
+              <li><strong>Bubble (🫧):</strong> Playful scale bounce animation</li>
+              <li><strong>Split (🔄):</strong> Dual-panel gradient slides in from sides</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Universal Effects:</h3>
+            <ul class="bullet-list">
+              <li><strong>Focus Pulse:</strong> Expanding ring animation for accessibility</li>
+              <li><strong>Particle Burst:</strong> ✨ emoji scales and fades on active</li>
+              <li><strong>Ripple Effect:</strong> Click creates expanding white circle</li>
+              <li><strong>3D Press:</strong> Physical button press sensation</li>
+              <li><strong>Smooth Easing:</strong> Cubic-bezier for natural motion</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(99, 102, 241, 0.1); border-radius: 12px; border-left: 4px solid var(--accent);">
+          <h3 style="margin-top: 0;">💡 How to Use Different Button Styles</h3>
+          <p>Simply add the style class to any button element:</p>
+          <code style="display: block; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px; margin-top: 1rem; font-family: monospace; color: var(--accent-2);">
+            &lt;button class="button primary"&gt;Shimmer Effect&lt;/button&gt;<br>
+            &lt;button class="button liquid"&gt;Liquid Fill&lt;/button&gt;<br>
+            &lt;button class="button neon"&gt;Neon Glow&lt;/button&gt;<br>
+            &lt;button class="button morph"&gt;Morphing Gradient&lt;/button&gt;<br>
+            &lt;button class="button glitch" data-text="Text"&gt;Glitch Effect&lt;/button&gt;<br>
+            &lt;button class="button bubble"&gt;Bubble Pop&lt;/button&gt;<br>
+            &lt;button class="button split"&gt;Split Reveal&lt;/button&gt;
+          </code>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Angad. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
