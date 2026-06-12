@@ -1027,3 +1027,29 @@ p {
 .button.split:hover::after {
   transform: translateX(0);
 }
+
+
+/* Social Links in Footer */
+.site-footer a[title] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.site-footer a[title]:hover {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+  color: var(--accent) !important;
+}
+
+.site-footer a[title]:active {
+  transform: translateY(-1px);
+}
